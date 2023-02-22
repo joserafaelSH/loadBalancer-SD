@@ -1,15 +1,17 @@
-# Install all dependencies
+# How to execute
 
+### Install all dependencies
 pip install -r requirements.txt
 
-# Runs all servers before execute requests
+### execute all servers before requesting
+##### open "servers" folder and run
 
-# Servers folder
+python3 serverName.py
 
-python3 nameFileServer.py
+### run load balancer
 
-# Runs load balancer
-
-# Src folder
-
+##### in "loadBalancer" folder
 python3 -m uvicorn src.main:app --reload
+
+
+### execute requests 

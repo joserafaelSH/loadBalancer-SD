@@ -4,7 +4,6 @@ from src.gateways import ServerGateway
 from src.utils import RoundRobin as rb
 from fastapi import FastAPI
 
-
 app = FastAPI()
 serverGateway = ServerGateway.ServerGateway()
 serversController = ServersController.ServersController(app, serverGateway)
